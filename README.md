@@ -1,1 +1,1 @@
-for personal convenience only
+for my personal convenience
