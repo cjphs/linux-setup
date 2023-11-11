@@ -32,7 +32,7 @@ sudo apt install dmenu -y
 sudo apt install yakuake -y
 
 # Misc
-sudo apt install 
+sudo apt install feh -y
 sudo apt install neofetch -y
 sudo apt install lolcat -y
 
