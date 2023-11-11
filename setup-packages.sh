@@ -7,6 +7,7 @@ sudo apt install git -y
 sudo apt install neovim -y
 sudo apt install nodejs -y
 sudo apt install npm -y
+sudo apt install gh -y
 
 # Java
 sudo apt install default-jre -y
@@ -32,8 +33,12 @@ sudo apt install kdenlive -y
 
 # Environment
 sudo apt install dmenu -y
+sudo apt install gdebi -y
 sudo apt install plasma-workspace-wayland -y
 sudo apt install yakuake -y
+
+sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
+sudo rm discord.deb
 
 # Misc
 sudo apt install lolcat -y
