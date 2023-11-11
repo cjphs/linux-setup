@@ -12,5 +12,5 @@ sudo mkdir -p "$WALLPAPERS"
 sudo cp -r ./resources/Wallpapers ~/Pictures
 
 echoMsg "Applying wallpaper"
-echoMsg "\"It's a new club thay plays really great hardcore techno for a really hip young crowd!\""
+echoMsg "\"It's a new club that plays really great hardcore techno for a really hip young crowd!\""
 plasma-apply-wallpaperimage "$(realpath $WALLPAPERS/cyberia.png)"
