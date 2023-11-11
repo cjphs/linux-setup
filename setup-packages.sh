@@ -37,12 +37,12 @@ sudo apt install gdebi -y
 sudo apt install plasma-workspace-wayland -y
 sudo apt install yakuake -y
 
-sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
-sudo rm discord.deb
-
 # Misc
 sudo apt install lolcat -y
 sudo apt install neofetch -y
+
+sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
+sudo rm discord.deb
 
 sudo apt upgrade -y
 sudo apt autoremove -y
