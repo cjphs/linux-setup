@@ -27,10 +27,6 @@ xdg-mime default vlc.desktop video/*
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
 
-# Editing
-sudo apt install gimp -y
-sudo apt install kdenlive -y
-
 # Environment
 sudo apt install dmenu -y
 sudo apt install gdebi -y
@@ -41,9 +37,20 @@ sudo apt install yakuake -y
 sudo apt install lolcat -y
 sudo apt install neofetch -y
 
-sudo curl -L "https://cdn.akamai.steamstatic.com/client/installer/steam.deb" -o steam.deb && sudo gdebi steam.deb -n
-sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
-sudo rm discord.deb steam.deb
+if [[ "$*" == *--lite* ]]; then
+    sudo apt upgrade -y
+    sudo apt autoremove -y
+    
+    exit 1
+else
+    # Editing
+    sudo apt install gimp -y
+    sudo apt install kdenlive -y
 
-sudo apt upgrade -y
-sudo apt autoremove -y
+    sudo curl -L "https://cdn.akamai.steamstatic.com/client/installer/steam.deb" -o steam.deb && sudo gdebi steam.deb -n
+    sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
+    sudo rm discord.deb steam.deb
+
+    sudo apt upgrade -y
+    sudo apt autoremove -y
+fi
