@@ -29,6 +29,7 @@ sudo apt install gimp -y
 sudo apt install kdenlive -y
 
 # Environment
+sudo apt install plasma-workspace-wayland -y
 sudo apt install dmenu -y
 sudo apt install yakuake -y
 
