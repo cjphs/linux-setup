@@ -20,6 +20,8 @@ sudo apt install python3 -y
 # Media
 sudo apt install feh -y
 sudo apt install vlc -y
+xdg-mime default vlc.desktop audio/*
+xdg-mime default vlc.desktop video/*
 # https://github.com/yt-dlp/yt-dlp
 sudo curl -L https://github.com/yt-dlp/yt-dlp/releases/latest/download/yt-dlp -o /usr/local/bin/yt-dlp
 sudo chmod a+rx /usr/local/bin/yt-dlp
