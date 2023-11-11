@@ -41,8 +41,9 @@ sudo apt install yakuake -y
 sudo apt install lolcat -y
 sudo apt install neofetch -y
 
+sudo curl -L "https://cdn.akamai.steamstatic.com/client/installer/steam.deb" -o steam.deb && sudo gdebi steam.deb -n
 sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o discord.deb && sudo gdebi discord.deb -n
-sudo rm discord.deb
+sudo rm discord.deb steam.deb
 
 sudo apt upgrade -y
 sudo apt autoremove -y
