@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # https://code.visualstudio.com/docs/setup/linux
 sudo apt-get install wget gpg -y 
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
