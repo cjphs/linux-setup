@@ -7,7 +7,7 @@ sudo apt install git -y
 sudo apt install neovim -y
 sudo apt install nodejs -y
 sudo apt install npm -y
-bash ./install_vscode.sh
+bash ./install-vscode.sh
 
 # Media
 sudo apt install vlc -y
