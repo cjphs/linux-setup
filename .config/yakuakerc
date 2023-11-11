@@ -1,0 +1,15 @@
+[Behavior]
+FocusFollowsMouse=true
+
+[Desktop Entry]
+DefaultProfile=Profile 1.profile
+
+[Dialogs]
+FirstRun=false
+
+[Window]
+Height=94
+KeepOpen=false
+Screen=1
+ShowOnAllDesktops=false
+ShowSystrayIcon=false
