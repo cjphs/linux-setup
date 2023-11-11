@@ -1,5 +1,8 @@
 #!/bin/bash
 
+cd "$(dirname "$0")"
+source ./setup-setup.sh
+
 # https://code.visualstudio.com/docs/setup/linux
 sudo apt-get install wget gpg -y 
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
