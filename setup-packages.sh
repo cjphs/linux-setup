@@ -7,7 +7,6 @@ sudo apt install git -y
 sudo apt install neovim -y
 sudo apt install nodejs -y
 sudo apt install npm -y
-bash ./install-vscode.sh
 
 # Java
 sudo apt install default-jre -y
