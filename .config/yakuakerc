@@ -1,3 +1,10 @@
+[Animation]
+Frames=25
+
+[Appearance]
+Skin=materia-dark
+SkinInstalledWithKns=true
+
 [Behavior]
 FocusFollowsMouse=true
 
@@ -7,9 +14,12 @@ DefaultProfile=Profile 1.profile
 [Dialogs]
 FirstRun=false
 
+[KFileDialog Settings]
+detailViewIconSize=16
+
 [Window]
+DynamicTabTitles=true
 Height=94
-KeepOpen=false
 Screen=1
 ShowOnAllDesktops=false
 ShowSystrayIcon=false
