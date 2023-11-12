@@ -62,7 +62,7 @@ else
     sudo curl -L "https://cdn.akamai.steamstatic.com/client/installer/steam.deb" -o tmp/steam.deb && sudo gdebi tmp/steam.deb -n
     sudo curl -L "https://discord.com/api/download?platform=linux&format=deb" -o tmp/discord.deb && sudo gdebi tmp/discord.deb -n
     sudo rm tmp/discord.deb tmp/steam.deb
-    sudo rm -f tmp
+    sudo rm -rf tmp
 
     sudo apt upgrade -y
     sudo apt autoremove -y
