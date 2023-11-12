@@ -42,7 +42,7 @@ installPython() {
     echoMsg "Installing Python"
     aptInstall pip
     aptInstall python3
-    alias python="python3"
+    aptInstall python-is-python3
 }
 installMedia() {
     echoMsg "Installing media packages"
