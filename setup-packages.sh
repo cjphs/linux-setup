@@ -37,7 +37,6 @@ sudo chmod a+rx /usr/local/bin/yt-dlp
 # Environment
 echoMsg "Installing environment packages"
 sudo apt install btop -y
-sudo apt install dmenu -y
 sudo apt install gdebi -y
 sudo apt install plasma-workspace-wayland -y
 sudo apt install yakuake -y
